@@ -89,6 +89,6 @@ src/settings/local.json
 .env
 /surfgate.app.egg-info/
 
-./tests
-./tools
-./notes
+notes/
+tests/
+tools/
