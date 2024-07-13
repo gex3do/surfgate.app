@@ -1,0 +1,52 @@
+1, https://de.wikipedia.org/wiki/Fortnite, url, false
+1, https://www.youtube.com/channel/UClG8odDC8TS6Zpqk9CGVQiQ, url, false
+1, https://mein-mmo.de/fortnite, url, false
+1, https://www.pcgames.de/Fortnite-Spiel-16272, url, false
+1, https://www.twitch.tv/directory/game/Fortnite, url, false
+1, https://www.pcgames.de/Fortnite-Spiel-16272, url, false
+
+1, https://www.pietsmiet.de/videos/playlists/3007-minecraft-ultra-hardcore-training, url, false
+1, https://www.gameswelt.de/minecraft/videos, url, false
+1, https://www.renderforest.com/de/template/Minecraft-magic-intro, url, false
+1, https://www.renderforest.com/de/minecraft-animation-maker, url, false
+1, https://www.playcentral.de/infos/id479/videos/minecraft.html, url, false
+1, https://www.cleanminecraftvideos.com, url, false
+
+1, https://google.com/search?q=minecraft+videos+deutsch, url, false
+1, https://google.com/search?q=minecraft+videos, url, false
+1, https://google.com/search?q=fortnite+videos+deutsch, url, false
+1, https://google.com/search?q=fortnite+videos, url, false
+
+1, https://google.com/search?q=видео+майнкрафт, url, false
+1, https://google.com/search?q=видео+фортнайт, url, false
+1, https://google.com/search?q=смотреть+видео+майнкрафт, url, false
+1, https://google.com/search?q=видео+фортнайт, url, false
+1, https://google.com/search?q=фортнайт, url, false
+
+1, https://google.com/search?q=counter+strike, url, false
+1, https://google.com/search?q=cs+go, url, false
+1, https://google.com/search?q=контр+страйк, url, false
+
+1, https://google.com/search?q=фортнайт+смотреть, url, false
+1, https://google.com/search?q=фортнайт+смотреть+ютуб, url, false
+
+1, https://www.youtube.com/watch?v=M7URUwlVqYI, url, false
+
+1, https://www.crazygames.com/c/shooting, url, false
+
+1, https://www.netzwelt.de/shooter/index.html, url, false
+1, https://www.browsergames.de/games/ballerspiele/shooter, url, false
+1, https://armorgames.com/category/shooting-games, url, false
+1, https://store.steampowered.com/tags/en/Shooter, url, false
+
+1, https://google.com/search?q=стрелялки+онлайн, url, false
+1, https://google.com/search?q=стрелялки+играть, url, false
+1, https://google.com/search?q=стрелялки+смотреть, url, false
+
+1, https://google.com/search?q=кровавые+стрелялки, url, false
+1, https://google.com/search?q=кровавые+стрелялки+играть, url, false
+
+1, https://google.com/search?q=bloody+shooting+games, url, false
+1, https://www.gamersdecide.com/pc-game-news/11-most-bloody-fps-games, url, false
+1, https://google.com/search?q=dota2, url, false
+1, https://google.com/search?q=omega+fortnite, url, false

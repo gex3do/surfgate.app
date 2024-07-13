@@ -1,0 +1,50 @@
+2, http://anarchistcookbook.com/f24/, url, false
+2, http://www.ahctv.com/tv-shows/ultimate-weapons, url, false
+2, http://wiki.teamfortress.com/wiki/Weapons, url, false
+
+2, http://arsmartialis.com/recht/waffen.html, url, false
+
+2, http://bigwebpages.com/members/foxriverguns/, url, false
+2, http://blattschuss.ch/?Jagdwaffen, url, false
+
+2, http://de.wikipedia.org/wiki/Waffe, url, false
+2, http://de.wikipedia.org/wiki/Waffenregister, url, false
+2, http://duncanlong.com/links/1guns.html, url, false
+2, http://ejmas.com/tin/, url, false
+2, http://faculty.washington.edu/kendo/budo.html, url, false
+2, http://faculty.washington.edu/kendo/kenyu.html, url, false
+
+2, http://home.graffiti.net/orangemist/mkau/, url, false
+2, http://melbar.de/Blankwaffen/, url, false
+2, http://melbar.de/Ritterschwert.php, url, false
+2, http://members.aol.com/historybks/muskets.htm, url, false
+2, http://mister-wong.de/tags/waffen/, url, false
+
+2, http://schleibinger.com/waffe0/, url, false
+2, http://users.erols.com/kenrawie/kyudo.html, url, false
+
+
+2, http://www.asahi-net.or.jp/~nf3m-ootk/kyudo_e.html, url, false
+2, http://www.eanet.com/sckf/, url, false
+2, http://www.fpsteam.it/battlefield1942_secret_weapons.htm, url, false
+2, http://www.fuhrerbunker.net/weapons/axis_weapons.php, url, false
+2, http://www.funet.fi/~magi/harrasteet/iaido/, url, false
+2, http://www.geocities.com/Augusta/8172/panzerfaust.htm, url, false
+2, http://www.geocities.com/HotSprings/6065/, url, false
+2, http://www.geocities.com/Tokyo/Dojo/1276/jodo.html, url, false
+2, http://www.geocities.com/Tokyo/Palace/7157/, url, false
+2, http://www.geocities.com/schwerer_wehrmacht_schleppe, url, false
+2, http://www.geocities.com/texaskyudo/, url, false
+2, http://www.greenpete.co.uk/?page_id=503, url, false
+2, http://www.howstuffworks.com/category.htm?cat=Weapons, url, false
+2, http://www.howstuffworks.com/exoskeleton.htm, url, false
+
+2, http://www.kyudo.com/akr.html, url, false
+2, http://www.kyudo.com/kyudo.html, url, false
+
+
+2, http://www.rain.org/~galvan/glossary.txt, url, false
+2, http://www.rain.org/~galvan/kndohome.html, url, false
+2, http://www.rain.org/~galvan/rules.txt, url, false
+
+2, https://google.com/search?q=waffen, url, false

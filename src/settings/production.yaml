@@ -1,0 +1,49 @@
+---
+main:
+  debug: false
+  domainqueries_filename: domainqueries
+  database:
+    initial_database: true
+    restore_records: true
+    restore_dir: backup
+    restore_filename: surfgate.app.bak
+    configuration:
+      username: postgres
+      password: zKi8eWnYCKgHsaoU
+      dbname: surfgateapp
+      host: "{env_db_ip}"
+      connection_string: postgresql://postgres:zKi8eWnYCKgHsaoU@{env_db_ip}:5432/surfgateapp
+      pool_size: 30
+      max_overflow: 150
+      pool_timeout: 30
+      echo: false
+  demo:
+    requests_left_pro_key: 10
+  task:
+    delete_in_days: 30
+    latest_resource_rate: false
+    task_notification_tries: 50
+  password_salt: dA@3(*_@xaX_zxc!@
+model:
+  mode: tx
+  train:
+    status: false
+    augmentation:
+      synonym:
+        status: false
+        quit_after_found: 10000
+        skip_after_not_found: 3
+        skip_word_shorter_than: 4
+        skip_after_unique_words: 3
+        limit_qty: 2
+    sources: high_alcohol,high_murder,high_porn_sex,high_sexual_abuse,high_suicide,high_weapons,low_animals,low_cartoons_anims,low_education,low_food,low_history,low_music,low_parents_kids,low_social,low_techs,medium_general,medium_general_rus,medium_games
+    save: true
+app:
+  display_name: surfgate.app API
+  debug: false
+  host: 0.0.0.0
+  port: '5000'
+  ssl:
+    status: false
+    certfile: keys/production/cert.pem
+    keyfile: keys/production/private.pem

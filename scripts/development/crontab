@@ -1,0 +1,5 @@
+*/3 * * * * /usr/bin/python3 /app/src/run_tasks_check.py --settings development
+*/5 * * * * /usr/bin/python3 /app/src/run_tasks_predicts.py --settings development
+*/7 * * * * /usr/bin/python3 /app/src/run_tasks_notifications.py --settings development
+
+0 0 */10 * * /usr/bin/python3 /app/src/run_tasks_delete.py --settings development

@@ -1,0 +1,150 @@
+0, http://www.rudimentsofwisdom.com/themes/themes_artandarchitecture.htm, url, true
+0, http://www.pbs.org/wgbh/nova/trex, url, true
+0, http://www.wmnh.com/wmvd0000.htm, url, true
+0, https://www.nationalgeographic.com/science, url, true
+
+0, http://figurethis.nctm.org/index.html, url, true
+
+0, https://askdruniverse.wsu.edu, url, true
+0, https://www.brainpop.com, url, true
+0, https://www.colormatters.com, url, true
+0, https://www.mos.org/leonardo, url, true
+0, http://www.extremescience.com, url, true
+0, https://www.funology.com, url, true
+0, http://www.innerbody.com, url, true
+0, http://www.planetpals.com, url, true
+0, http://www.rudimentsofwisdom.com/themes/themes_science.htm, url, true
+0, http://www.exploratorium.edu/science_explorer, url, true
+0, http://www.exploratorium.edu/skateboarding, url, true
+0, https://www.strangescience.net, url, true
+0, http://www.sciencebob.com/index.php, url, true
+0, http://www.grammaropolis.com, url, true
+0, http://www.cellsalive.com, url, true
+0, http://www.storyjumper.com, url, true
+0, http://www.toporopa.eu/en/index.html, url, true
+
+0, https://www.canadiangeographic.ca/kids, url, true
+
+0, http://www.e-learningforkids.org, url, true
+0, http://www.abcya.com, url, true
+
+0, https://www.topmarks.co.uk/, url, true
+0, http://interactivesites.weebly.com, url, true
+
+0, https://kids.nationalgeographic.com, url, true
+0, http://www.seussville.com, url, true
+
+0, http://earthquake.usgs.gov/learn/kids, url, true
+
+0, https://solnet.ee/umnoteka/zanimatelnaja-fizika_22, url, true
+0, http://pochemu4ka.ru, url, true
+0, http://www.teremoc.ru, url, true
+0, http://www.teremoc.ru/game/game220.htm, url, true
+0, http://www.teremoc.ru/game/gamee.htm, url, true
+0, http://baby-best.ru, url, true
+0, http://matreshkino.ru, url, true
+0, https://www.maam.ru, url, true
+0, http://morkwa.com, url, true
+0, http://afgsm.ru/, url, true
+0, http://tirnet.ru, url, true
+0, http://zakraski.ru, url, true
+0, http://cheep-cheep.ru, url, true
+0, http://mults.info, url, true
+0, http://www.playlandia.ru, url, true
+0, http://igraem.pro, url, true
+0, http://www.karusel-tv.ru, url, true
+0, http://www.karusel-tv.ru, url, true
+0, http://smiletv.org, url, true
+0, http://www.fixiki.ru, url, true
+0, http://rebzi.ru, url, true
+0, http://www.igraemsa.ru, url, true
+0, http://disney.ru, url, true
+0, http://detkam.e-papa.ru, url, true
+0, http://www.tiji.ru, url, true
+0, http://flyani.ru, url, true
+0, http://ladushki.ru, url, true
+0, http://www.brixbrum.ru, url, true
+0, http://fantik-bantik.ru, url, true
+0, http://www.deti.fm, url, true
+
+0, http://mirchar.ru, url, true
+0, http://www.shararam.ru, url, true
+0, http://murzilka.org, url, true
+0, http://www.juja.ru, url, true
+0, http://www.razumeykin.ru, url, true
+0, http://mrnussbaum.com, url, true
+
+0, https://www.kinderweltreise.de, url, true
+0, https://afrika-junior.de/inhalt, url, true
+0, http://www.amira-lesen.de, url, true
+0, http://www.archiraum.de, url, true
+0, http://www.audiyoukids.de, url, true
+0, http://www.baumwoll-seite.de, url, true
+
+0, http://dascurium.de, url, true
+0, https://www.zum.de/portal/grundschule, url, true
+
+0, https://jippie.life, url, true
+0, http://www.kidsville.de, url, true
+
+0, https://www.kinderzeitmaschine.de, url, true
+0, http://klingklangland.com, url, true
+0, http://kritzel-klub.de, url, true
+0, http://lana-und-tom.de, url, true
+0, https://www.legakids.net, url, true
+0, http://www.lernspass-fuer-kinder.de, url, true
+0, http://letti-abc.de, url, true
+0, http://losleser.de, url, true
+0, http://majis.de, url, true
+
+0, http://mediencamp.net, url, true
+0, https://www.unserkoerper.de, url, true
+0, http://merlantis.de/stage.html, url, true
+
+0, http://www.millithesnail.com/?lang=de&page=home, url, true
+0, http://www.millithesnail.com, url, true
+0, http://multiverso.de, url, true
+
+0, http://opera-maker.de, url, true
+0, http://ostsee-entdecker.de, url, true
+0, http://pedalpiraten.de/startseite, url, true
+0, http://pilotix.de, url, true
+0, http://radijojo.org, url, true
+
+0, https://www.rossipotti.de/ausgabe28/titelbild.html#start, url, true
+0, https://seitenstark.de, url, true
+
+0, https://www.tierchenwelt.de, url, true
+0, http://tipptrainer-fuer-kinder.de, url, true
+0, https://www.trickino.de, url, true
+0, http://trompis-tondschungel.de, url, true
+0, http://trompis-zeitreise.de, url, true
+0, http://www.weimarpedia-kids.de, url, true
+0, http://www.wildkids.de, url, true
+0, http://wortwusel.net, url, true
+
+0, https://www.wdrmaus.de, url, true
+0, https://www.wasistwas.de/home.html, url, true
+0, https://www.kindersache.de, url, true
+
+0, https://www.education.com/worksheets, url, true
+0, https://www.education.com/resources, url, true
+0, https://www.education.com/guided-lessons/preschool, url, true
+0, https://www.kidzone.ws, url, true
+0, https://www.kidzone.ws/animals/index.html, url, true
+0, https://www.enchantedlearning.com/history/space/spacerace.shtml, url, true
+0, https://www.enchantedlearning.com/history/space/NeilArmstrongBiography.shtml, url, true
+
+0, https://www.learninga-z.com, url, true
+0, https://www.learninga-z.com/site/products/sciencea-z/overview, url, true
+
+0, https://www.abcmouse.com, url, true
+0, https://www.dltk-teach.com/fairy-tales/ugly-duckling/story.htm, url, true
+0, https://www.dltk-teach.com, url, true
+0, https://www.dltk-teach.com/alphabuddies/index.html, url, true
+
+0, https://www.youtube.com/watch?v=K23Ay6nnQJM, url, false
+0, https://www.youtube.com/watch?v=Co3YNK4_yjY, url, false
+
+0, https://paintingvalley.com/rainbow-drawing-for-kids, url, true
+0, https://easydrawingguides.com/draw-rainbow-really-easy-drawing-tutorial, url, true

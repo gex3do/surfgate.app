@@ -1,0 +1,5 @@
+2, http://suicide.com, url, true
+2, https://www.khaleejtimes.com/international/india/22-year-old-commits-suicide-after-taking-blue-whale-challenge, url, true
+2, https://knowyourmeme.com/memes/blue-whale-challenge, url, true
+2, https://www.thesun.co.uk/news/worldnews/3003805/blue-whale-suicide-game-challenge-deaths-uk, url, true
+2, https://www.cybersmile.org/blog/everything-you-need-to-know-about-the-blue-whale-challenge, url, true

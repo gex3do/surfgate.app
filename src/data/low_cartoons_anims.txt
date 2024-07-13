@@ -1,0 +1,80 @@
+0, http://www.cartooncritters.com, url, true
+0, https://easydrawingguides.com, url, true
+0, https://easydrawingguides.com/how-to-draw-school-books, url, true
+0, https://kinderart.com, url, true
+0, https://www.metmuseum.org/art/online-features/metkids, url, true
+
+0, http://lol.disney.com, url, true
+0, https://tv.disney.de, url, true
+0, https://tvokids.com/school-age, url, true
+
+0, https://www.berenstainbears.com, url, true
+0, https://www.youtube.com/watch?v=zhH2mbbZPCc, url, false
+0, https://pbskids.org/curiousgeorge, url, true
+0, https://pbskids.org/curiousgeorge/games, url, true
+0, https://www.berenstainbears.com, url, true
+
+0, https://pbskids.org/dinosaurtrain/fieldguide, url, true
+0, https://pbskids.org/dinosaurtrain, url, true
+0, http://grownups.pbskids.org, url, true
+0, http://www.curiousgeorge.com, url, true
+0, https://en.wikipedia.org/wiki/Dinosaur_Train, url, false
+
+0, https://de.wikipedia.org/wiki/Chuggington_%E2%80%93_Die_Loks_sind_los!, url, false
+0, https://www.fernsehserien.de/chuggington-die-loks-sind-los, url, false
+0, https://www.youtube.com/watch?v=YdWrKtWqI6A, url, false
+0, https://www.youtube.com/watch?v=OKHYvdlP5v8, url, false
+
+0, https://www.youtube.com/watch?v=EkSBol8qS4A, url, false
+0, https://www.youtube.com/watch?v=oDW9iGzT_FY, url, false
+0, https://www.youtube.com/watch?v=FNoRNIMlw_I, url, false
+0, https://www.youtube.com/watch?v=BL50xRTnHTQ, url, false
+0, https://www.youtube.com/watch?v=ibOY0-2clV8, url, false
+0, https://www.youtube.com/watch?v=mnrCkNqRwo4, url, false
+0, https://www.youtube.com/watch?v=x4hX5FrWnfA, url, false
+0, https://www.youtube.com/watch?v=olQhvvTbB4Q, url, false
+0, https://www.youtube.com/watch?v=tTmfP-HP5PE, url, false
+
+
+0, http://www.kixi.de, url, true
+0, https://www.youtube.com/watch?v=IcrN_j5y5EA, url, false
+
+0, https://www.youtube.com/watch?v=vLeztuQ35JI, url, false
+0, https://www.youtube.com/watch?v=2l3WhlgjxSA, url, false
+
+0, https://kinderfilmblog.de/2013/01/shaun-das-schaf-2007, url, true
+0, https://kinderfilmblog.de/2013/03/der-kleine-rabe-socke-2012, url, true
+0, https://kinderfilmblog.de/2014/07/filmfest-muenchen-quatsch-und-die-nasenbaerbande-2014, url, true
+0, https://kinderfilmblog.de/2013/01/lotte-und-das-geheimnis-der-mondsteine-2011, url, true
+0, https://kinderfilmblog.de/2016/02/berlinale-2016-ted-siegers-molly-monster-der-kinofilm-2016, url, true
+0, https://kinderfilmblog.de/2016/06/trudes-tier-2015, url, true
+
+0, https://kinder.wdr.de/tv/wissen-macht-ah/index.html, url, false
+0, https://www.kinderfilmwelt.de/index.php/de, url, true
+0, http://www.auditorix.de/kinder, url, true
+0, http://www.auditorix.de/index.php?id=274, url, true
+0, http://www.auditorix.de/index.php?id=168&bxslider=0, url, true
+0, http://www.labbe.de, url, true
+
+0, http://www.jazzoo-spiele.de, url, true
+0, https://www.kika.de, url, true
+
+0, https://google.com/search?q=smeshariki, url, false
+0, https://google.com/search?q=смешарики, url, false
+0, https://google.com/search?q=смешарики+новые+серии, url, false
+0, https://google.com/search?q=смешарики+2019, url, false
+0, https://www.smeshariki.ru, url, true
+0, https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B5%D1%88%D0%B0%D1%80%D0%B8%D0%BA%D0%B8, url, false
+
+0, https://google.com/search?q=luntik, url, false
+0, https://google.com/search?q=лунтик, url, false
+0, https://www.ivi.tv/watch/luntik, url, false
+0, http://mega-mult.ru/russkie/408-luntik.html, url, false
+
+0, https://google.com/search?q=мульты, url, false
+0, https://google.com/search?q=мультфильмы, url, false
+0, https://google.com/search?q=мультфильмы+ютуб, url, false
+0, https://google.com/search?q=мультфильмы+советские, url, false
+
+0, https://google.com/search?q=видео+для+детей, url, false
+0, https://google.com/search?q=видео+для+маленьких, url, false

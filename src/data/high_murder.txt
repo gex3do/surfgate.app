@@ -1,0 +1,4 @@
+2, https://en.wikipedia.org/wiki/Murder%E2%80%93suicide, url, false
+2, https://www.webmd.com/depression/features/murder-suicides-in-elderly-rise, url, false
+2, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4594088, url, false
+2, https://www.local10.com/news/florida/broward/husband-wife-killed-in-murder-suicide-in-pembroke-pines-authorities-say, url, false

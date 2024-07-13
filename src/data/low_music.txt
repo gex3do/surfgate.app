@@ -1,0 +1,8 @@
+0, http://www.creatingmusic.com, url, true
+0, https://www.guitarlessonworld.com/lessons, url, true
+
+0, https://childrensmusic.org, url, true
+0, https://www.kindermusik.de, url, true
+0, http://www.felixwpunkt.de, url, true
+0, https://www.milchsalon.de, url, true
+0, https://geraldino.net, url, true

@@ -1,0 +1,35 @@
+2, https://en.wikipedia.org/wiki/Child_sexual_abuse, url, false
+2, https://www.google.com/search?source=hp&q=sex+child&btnK=Google-Suche&oq=sex+child, url, false
+2, https://www.rainn.org/articles/child-sexual-abuse, url, false
+2, https://www.nhs.uk/live-well/healthy-body/spotting-signs-of-child-sexual-abuse, url, false
+2, https://www.d2l.org/the-issue/statistics, url, false
+
+2, https://google.com/search?q=esel+s+e+x, url, false
+2, https://google.com/search?q=esel+f+i+c+k+e+n, url, false
+2, https://google.com/search?q=hund+s+e+x, url, false
+2, https://google.com/search?q=hund+f+i+c+k+e+n, url, false
+2, https://google.com/search?q=tiere+s+e+x, url, false
+2, https://google.com/search?q=tiere+f+i+c+k+e+n, url, false
+
+2, https://google.com/search?q=s+e+x, url, false
+2, https://google.com/search?q=tiere+f+i+c+k+e+n, url, false
+
+2, https://www.youtube.com/watch?v=D0oa6rI7yVg&app=desktop, url, false
+
+2, https://ebanatka.ru, url, true
+2, https://www.youtube.com/watch?v=h5rQLXu7OIw, url, false
+
+2, https://xnxx2.pro/tag/zoophelie-1.html, url, true
+2, http://www.domreptotal.com/tag/zoophelie, url, true
+2, https://fucktapes.gratis/zoophelie-sex-.htm, url, true
+2, https://serbiporno.net/zoophelie-porno-.htm, url, true
+2, https://zoofiction.com, url, true
+
+2, https://de.wikipedia.org/wiki/BDSM, url, false
+2, https://www.focus.de/familie/bdsm-wie-eine-sucht-sexspiele-an-der-grenze-des-ertraeglichen_id_8204413.html, url, false
+2, https://eufory.de, url, true
+2, https://www.wunderweib.de/bdsm, url, false
+2, https://www.liebeslust.de/bondage, url, true
+2, https://www.etsy.com/de/market/monoglove, url, false
+2, https://www.mchurt.eu/de/unser-onlineshop/mcrestrictive/monohandschuh-co/bolero-armfessel.html, url, false
+2, https://www.mchurt.eu/de/unser-onlineshop/mcrestrictive/monohandschuh-co/klassischer-mono-handschuh.html, url, false

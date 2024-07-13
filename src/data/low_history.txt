@@ -1,0 +1,2 @@
+0, http://www.scholastic.com/scholastic_thanksgiving, url, true
+0, https://discoveringegypt.com, url, true

@@ -1,0 +1,14 @@
+0, https://www.youtube.com/watch?v=2EwKdFdcXm8, url, false
+0, https://www.facebook.com/ABCsToACTs, url, false
+0, https://twitter.com/FromABCsToACTs, url, false
+0, https://pinterest.com/abcstoacts, url, false
+0, https://instagram.com/abcstoacts, url, false
+0, https://plus.google.com/AmberMathisonABCsToACTs, url, false
+
+0, https://www.fragfinn.de, url, true
+
+0, https://www.kirche-entdecken.de, url, true
+
+0, https://www.kindernetz.de, url, true
+0, https://www.geo.de, url, true
+

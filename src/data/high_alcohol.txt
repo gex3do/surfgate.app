@@ -1,0 +1,34 @@
+2, http://au.video.yahoo.com/watch/3048499/8700532, url, false
+2, http://cocktails.about.com/od/cocktailrecipes/r/mrtni.htm, url, false
+2, http://en.wikipedia.org/wiki/Bloody_Mary_(cocktail), url, false
+2, http://en.wikipedia.org/wiki/Gin, url, false
+2, http://en.wikipedia.org/wiki/Martini_(cocktail), url, false
+2, http://en.wikipedia.org/wiki/Vodka, url, false
+2, http://en.wikipedia.org/wiki/Vodka_martini, url, false
+2, http://en.wordpress.com/tag/paulaner, url, false
+2, http://en.wordpress.com/tag/vodka-martini, url, false
+2, http://londonmarket.tripod.com/whisky, url, false
+
+2, http://recipes.wikia.com/wiki/Bloody_Mary_Vodka, url, false
+2, http://schlemmerlinks.de/Getraenke/Hochprozentiges, url, false
+2, http://www.argiolas.it/#1, url, false
+
+2, http://www.chefkoch.de/rezeptsammlung/154838/alkoholische-Getraenke.html, url, false
+2, http://www.chemienet.info/4-alk2.html, url, false
+2, http://www.chow.com/recipes/10358, url, false
+2, http://www.cocktailtimes.com/vodka, url, false
+2, http://www.cocktailtimes.com/vodka/bloodymary.shtml, url, false
+2, http://www.cocktailtimes.com/vodka/vodkamartini.shtml, url, false
+
+2, http://www.frag-mutti.de/tipp/p/show/category_id/6/sub_category_id/18, url, false
+2, http://www.geist-im-glas.com/alcohol_liqueur.htm, url, false
+2, http://www.getraenke-mastrandrea.de/bier.html, url, false
+2, http://www.go4worldbusiness.com/Whisky, url, false
+
+2, http://www.hotfrog.com/Products/Gin, url, false
+2, http://www.idrink.com/v.html?id=1255, url, false
+
+2, http://www.lagler.cc/de/brennerei, url, false
+2, http://www.lehneck.de/schnaps.htm, url, false
+
+2, http://www.onkelheinz.de/wein.htm, url, false

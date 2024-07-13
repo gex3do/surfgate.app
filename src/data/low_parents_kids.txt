@@ -1,0 +1,59 @@
+0, https://www.commonsensemedia.org/app-reviews/first-words-deluxe, url, true
+0, https://www.commonsensemedia.org/app-reviews/this-is-my-story-and-im-sticking-to-it, url, true
+
+0, http://www.brainbashers.com, url, true
+0, https://www.internet-abc.de, url, true
+
+0, https://www.kiddle.co, url, true
+0, https://www.kidtopia.info, url, true
+0, https://www.speakaboos.com, url, true
+
+0, http://peepandthebigwideworld.com/en, url, true
+0, http://www.nickjr.de, url, true
+0, https://www.sesamestreet.org, url, true
+0, http://pbskids.org, url, true
+
+0, http://www.starfall.com, url, true
+0, http://www.hellokids.com, url, true
+
+0, http://www.readingbear.org, url, true
+0, http://www.sheppardsoftware.com, url, true
+0, https://tvokids.com/preschool, url, true
+0, http://myrainbownursery.co.uk, url, true
+0, http://www.classicsforkids.com, url, true
+0, http://www.sphinxkids.org, url
+0, https://americanliterature.com/childrens-stories/the-three-little-pigs, url, true
+0, https://americanliterature.com/author/aesop/short-story/the-tortoise-and-the-hare, url, true
+0, https://americanliterature.com/childrens-stories/the-bogey-beast, url, true
+0, https://americanliterature.com/author/aesop/short-story/the-ant-and-the-grasshopper, url, true
+0, https://americanliterature.com/childrens-stories/little-red-riding-hood, url, true
+
+0, https://www.blinde-kuh.de, url, true
+0, https://www.hanisauland.de, url, true
+0, https://www.pomki.de, url, true
+
+0, http://www.highlightskids.com, url, true
+0, http://www.nga.gov/content/ngaweb/education/kids.html, url, true
+
+0, https://fromabcstoacts.com, url, true
+0, https://fromabcstoacts.com/about, url, true
+0, https://fromabcstoacts.com/45-free-educational-websites-for-kids, url, true
+0, https://www.kids-pages.com, url, true
+0, https://www.kids-pages.com/alphabet.htm, url, true
+0, http://www.kidsites.com/sites-edu/science.htm, url, true
+
+0, http://www.storylineonline.net, url, true
+0, http://www.turtlediary.com, url, true
+0, http://www.sesamestreet.org, url, true
+0, http://www.sadlier-oxford.com/phonics/grade_k_1/zoo_a/zoo1x.htm, url, true
+0, http://tvokids.com, url, true
+0, http://www.cookie.com, url, true
+0, http://www.nhm.ac.uk/nature-online/life/dinosaurs-other-extinct-creatures/dino-directory/top-5/top-5.html, url, true
+0, http://www.stevespanglerscience.com/experiments, url, true
+0, http://www.mission-us.org, url, true
+
+0, https://physikforkids.de/startseite, url, true
+0, https://physikforkids.de/sternwarte/sonnensystem/asteroideng%C3%BCrtel, url, true
+
+0, http://www.find-das-bild.de, url, true
+
