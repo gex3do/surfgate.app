@@ -22,10 +22,10 @@ from src.utils.logger import logger
 class ResourceMgr:
 
     def __init__(
-        self,
-        settings: dict,
-        feature_extract_mgr: FeatureExtractMgr,
-        domainquery_mgr: DomainQueryMgr,
+            self,
+            settings: dict,
+            feature_extract_mgr: FeatureExtractMgr,
+            domainquery_mgr: DomainQueryMgr,
     ):
         self.settings = settings
         self.feature_extract_mgr = feature_extract_mgr
@@ -48,7 +48,7 @@ class ResourceMgr:
 
     @staticmethod
     def get_resources_by_status(
-        sess: Session, status: str
+            sess: Session, status: str
     ) -> Query[Resource] | Query[Any]:
         return sess.query(Resource).filter_by(status=status)
 
@@ -58,7 +58,7 @@ class ResourceMgr:
 
     @staticmethod
     def get_checked_resource_by_value(
-        sess: Session, value: str
+            sess: Session, value: str
     ) -> Type[Resource] | None:
         return (
             sess.query(Resource)
@@ -72,7 +72,7 @@ class ResourceMgr:
 
     @staticmethod
     def get_checked_propogated_resource_by_value(
-        sess: Session, domain_name: str
+            sess: Session, domain_name: str
     ) -> Type[Resource] | None:
         return (
             sess.query(Resource)
@@ -90,7 +90,7 @@ class ResourceMgr:
 
     @staticmethod
     def get_checked_with_truerate_resources(
-        sess: Session,
+            sess: Session,
     ) -> Query[Type[Resource]] | Query[Any]:
         return (
             sess.query(Resource)
@@ -100,7 +100,7 @@ class ResourceMgr:
 
     @staticmethod
     def get_checked_with_predictionrate_resources(
-        sess: Session,
+            sess: Session,
     ) -> Query[Type[Resource]] | Query[Any]:
         return (
             sess.query(Resource)
@@ -110,7 +110,7 @@ class ResourceMgr:
 
     @staticmethod
     def prepare_domain_name_for_search(
-        domain_name: str, domain_endings_langs: list, character: str
+            domain_name: str, domain_endings_langs: list, character: str
     ) -> str:
         # TODO check this function and make it more clear what it does
         domain_parts = domain_name.split(".")
@@ -141,7 +141,7 @@ class ResourceMgr:
 
     @debug_log_entry_exit(__name__)
     def _get_requested_checked_resource(
-        self, sess: Session, resource: Resource
+            self, sess: Session, resource: Resource
     ) -> Type[Resource] | None:
         domain_name = None
 
@@ -189,11 +189,11 @@ class ResourceMgr:
 
     @debug_log_entry_exit(__name__)
     def get_and_predict(
-        self,
-        sess: Session,
-        resource: Resource,
-        recheck: bool = False,
-        show_top_features: bool = False,
+            self,
+            sess: Session,
+            resource: Resource,
+            recheck: bool = False,
+            show_top_features: bool = False,
     ):
         # if requested resource is not found
         #   1. add resource as check, then start feature extraction
@@ -206,9 +206,9 @@ class ResourceMgr:
         # if the requested resource was not found or recheck is given or top features are requested, and we don't
         # have them
         has_top_features = (
-            requested_resource
-            and show_top_features
-            and not requested_resource.top_features
+                requested_resource
+                and show_top_features
+                and not requested_resource.top_features
         )
 
         if requested_resource is None or recheck or has_top_features:
@@ -252,12 +252,12 @@ class ResourceMgr:
 
     @debug_log_entry_exit(__name__)
     def process_requested_resource(
-        self,
-        sess: Session,
-        res: Resource,
-        analyse_resource=True,
-        predict_resource=True,
-        show_top_features=False,
+            self,
+            sess: Session,
+            res: Resource,
+            analyse_resource=True,
+            predict_resource=True,
+            show_top_features=False,
     ):
         res.status = ResourceStatus.CHECK
 
@@ -300,7 +300,7 @@ class ResourceMgr:
 
     @debug_log_entry_exit(__name__)
     def predict_resource(
-        self, sess: Session, resource: Resource, show_top_features: bool = False
+            self, sess: Session, resource: Resource, show_top_features: bool = False
     ):
         if self.classifier is None:
             raise ValueError("The classifier is not set")
