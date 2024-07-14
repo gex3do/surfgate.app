@@ -3,6 +3,10 @@ PIP = pip3
 SORT = isort
 VIRTNAME = surfgate.app
 PYENV = pyenv
+AUTOFLAKE = autoflake
+PYLAMA = pylama
+
+PYLIST = src/*.py src/**/*.py src/**/**/*.py
 
 setup:
 	$(PYENV) virtualenv $(PYTHON) $(VIRTNAME) || true
@@ -19,21 +23,35 @@ deactivate:
 	pyenv deactivate
 
 unused:
-	autoflake --recursive --in-place --remove-unused-variables --remove-all-unused-imports --recursive src/**/**/*.py
+	for i in $(PYLIST); do \
+	  $(AUTOFLAKE) --recursive --in-place --remove-unused-variables --remove-all-unused-imports --recursive $$i; \
+	done
 
 sort:
-	$(SORT) src/*.py
-	$(SORT) src/**/*.py
-	$(SORT) src/**/**/*.py
+	for i in $(PYLIST); do \
+	  $(SORT) $$i; \
+	done
 
 check: unused sort
-	pylama -o pylama.ini **/**/*.py
+	for i in $(PYLIST); do \
+	  $(PYLAMA) -o pylama.ini $$i; \
+	done
 
-app-start:
+start-app:
+	# starts postgres + webserver (currently only postgres)
 	docker-compose -f ./scripts/development/docker-compose.yml up -d
 
-app-stop:
+stop-app:
 	docker-compose -f ./scripts/development/docker-compose.yml down
+
+init:
+	python3 ./src/init.py
+
+train:
+	python3 ./src/train.py
+
+app:
+	python3 ./src/app.py
 
 tasks-check:
 	python3 ./src/run_tasks_check.py
@@ -46,3 +64,6 @@ tasks-notifications:
 
 tasks-delete:
 	python3 ./src/run_tasks_delete.py
+
+sync:
+	python3 ./src/sync_true_rates.py
