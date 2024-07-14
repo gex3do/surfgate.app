@@ -4,7 +4,7 @@ from typing import Any, Type
 
 from src.core.entity.Key import Key
 from src.core.entity.User import User
-from src.core.manager.ResourceMgr import ResourceMgr
+from src.core.helper.rate import prediction_to_violation
 from src.core.model.resource import ResourcePredictGetOrRateOut
 from src.core.model.task import TaskCreateNotification, TaskCreateOut, TaskGetOut
 from src.core.model.user_key import UserCreateOut, UserKeyCreateOut, UserKeyDeleteOut
@@ -15,7 +15,7 @@ class Responser:
     def create_resource_rate_status(
         resource, show_top_features=False
     ) -> (ResourcePredictGetOrRateOut, HTTPStatus):
-        rate = ResourceMgr.rate_to_val(resource.prediction_rate)
+        rate = prediction_to_violation(resource.prediction_rate)
         if show_top_features:
             top_features = (
                 json.loads(resource.top_features) if resource.top_features else {}

@@ -20,8 +20,8 @@ from src.core.AppEnum import (
 from src.core.entity.PageItem import PageItem
 from src.core.entity.Resource import Resource
 from src.core.entity.Task import Task
+from src.core.helper.rate import prediction_to_violation
 from src.core.manager.FeatureExtractMgr import fetchers
-from src.core.manager.ResourceMgr import ResourceMgr
 from src.core.webscrapper import get_content_by_val_and_collect_links
 from src.utils.logger import logger
 
@@ -386,7 +386,7 @@ class TaskMgr:
                     )
 
                 page_item.top_features = requested_resource.top_features
-                page_item.rate = ResourceMgr.rate_to_val(requested_resource.prediction_rate)
+                page_item.rate = prediction_to_violation(requested_resource.prediction_rate)
             else:
                 raise ValueError(
                     f"There is no resource created for the value {page_item.link}"
@@ -432,7 +432,7 @@ class TaskMgr:
 
                 if resource:
                     # get latest resource rate
-                    page_item.rate = ResourceMgr.rate_to_val(resource.prediction_rate)
+                    page_item.rate = prediction_to_violation(resource.prediction_rate)
                 else:
                     raise ValueError(
                         "There is no resource created for the value {}".format(
