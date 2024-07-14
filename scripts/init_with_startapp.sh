@@ -9,7 +9,7 @@ echo "Starting $param_mode environment"
 
 python3 init.py --settings "$param_mode"
 
-python3 synch_true_rates.py --settings "$param_mode"
+python3 sync_true_rates.py --settings "$param_mode"
 
 python3 update_domainsearchqueries.py --settings "$param_mode"
 

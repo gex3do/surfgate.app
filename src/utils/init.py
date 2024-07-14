@@ -53,12 +53,12 @@ def init_domainqueries(settings: dict):
     sess.close()
 
 
-def init_resources(settings: dict):
+def init_resources(settings: dict, update: bool = False):
     feature_extract_mgr = FeatureExtractMgr(settings, TokenizationMgr(settings))
     resource_mgr = ResourceMgr(settings, feature_extract_mgr, DomainQueryMgr(settings))
 
-    # bootstrap: prepare and add `checked` resources
-    logger.info("Read data source files")
+    logger.info("Read data source files in mode: %s ", "update" if update else "init")
+
     sources = settings["model"]["train"]["sources"]
     sources = sources.split(",")
     sess = SqlMgr.create_session()
@@ -67,12 +67,14 @@ def init_resources(settings: dict):
         source = source.strip()
         absolute_file_path = f"{curr_dir}/../data/{source}.txt"
         logger.info("Read data source file: %s", absolute_file_path)
-        resource_mgr.read_resources_from_file(sess, absolute_file_path)
+        resource_mgr.read_resources_from_file(sess, absolute_file_path, update_resource=update)
     sess.commit()
     sess.close()
 
-    logger.info("Analyse resources: extracting features")
+    if update:
+        return
 
+    logger.info("Analyse resources while extracting features")
     sess = SqlMgr.create_session()
     resource_mgr.analyse_resources(sess)
     sess.close()

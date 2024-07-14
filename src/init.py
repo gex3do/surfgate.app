@@ -32,8 +32,7 @@ def main():
     init_domainqueries(settings)
 
     logger.info("Initialize resources and re-analyse them")
-    init_resources(settings)
-
+    init_resources(settings, update=False)
     logger.info("Finished initialization process")
 
 
