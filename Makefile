@@ -6,7 +6,8 @@ PYENV = pyenv
 AUTOFLAKE = autoflake
 PYLAMA = pylama
 
-PYLIST = src/*.py src/**/*.py src/**/**/*.py
+PYLIST3 = src/*.py src/**/*.py src/**/**/*.py
+PYLIST2 = src/*.py src/**/*.py
 
 setup:
 	$(PYENV) virtualenv $(PYTHON) $(VIRTNAME) || true
@@ -23,17 +24,17 @@ deactivate:
 	pyenv deactivate
 
 unused:
-	for i in $(PYLIST); do \
+	for i in $(PYLIST3); do \
 	  $(AUTOFLAKE) --recursive --in-place --remove-unused-variables --remove-all-unused-imports --recursive $$i; \
 	done
 
 sort:
-	for i in $(PYLIST); do \
+	for i in $(PYLIST3); do \
 	  $(SORT) $$i; \
 	done
 
 check: unused sort
-	for i in $(PYLIST); do \
+	for i in $(PYLIST2); do \
 	  $(PYLAMA) -o pylama.ini $$i; \
 	done
 
