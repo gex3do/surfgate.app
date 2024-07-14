@@ -1,4 +1,4 @@
-from src.core.AppEnum import UserType
+from src.core.app_enum import UserType
 
 min_permissions = {
     "/Resource/predictResourceRate": UserType.CUSTOMER,

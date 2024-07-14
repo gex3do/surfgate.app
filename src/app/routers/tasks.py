@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
 
 from src.app.dependencies import process_api_request
-from src.core.api.TaskApi import TaskApi
+from src.core.api.task_api import TaskApi
 from src.core.model.task import TaskCreateIn, TaskCreateOut, TaskGetIn, TaskGetOut
 
 

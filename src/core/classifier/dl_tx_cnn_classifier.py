@@ -3,42 +3,55 @@ import posixpath
 
 import numpy as np
 from keras import Sequential
-from keras.api.layers import Dense, Dropout
-from sklearn import logger, metrics
+from keras.api.layers import Conv1D, Dense, Dropout, Flatten, MaxPooling1D
+from sklearn import metrics
 from sqlalchemy.orm import Session
 
-from src.core.classifier.Classifier import Classifier
+from src.core.classifier.classifier import Classifier
+from src.utils.logger import logger
 
 
-class DLTxClassifier(Classifier):
+class DLTxCNNClassifier(Classifier):
     def __init__(self, settings, res_mgr):
         Classifier.__init__(self, settings, res_mgr)
 
         self.vectorizer_dump_filename = posixpath.normpath(
-            os.path.join(self.curr_dir, f"{self.target_dir}/dltx_vectorizerDump.pkl")
+            os.path.join(self.curr_dir, f"{self.target_dir}/dltxcnn_vectorizerDump.pkl")
         )
 
         self.model_dump_filename = posixpath.normpath(
-            os.path.join(self.curr_dir, f"{self.target_dir}/dltx_modelDump.pkl")
+            os.path.join(self.curr_dir, f"{self.target_dir}/dltxcnn_modelDump.pkl")
         )
 
     @staticmethod
-    def _build_model(shape, num_classes, dropout=0.7):
-        nodes = 512
-        num_layers = 2
-
+    def __build_model(data_shape: tuple, num_classes):
         model = Sequential()
-        model.add(Dense(nodes, input_dim=shape, activation="relu"))
-        model.add(Dropout(dropout))
 
-        for i in range(0, num_layers):
-            model.add(Dense(nodes, activation="relu"))
-            model.add(Dropout(dropout))
+        # Layer 1
+        model.add(
+            Conv1D(
+                filters=16,
+                kernel_size=5,
+                activation="relu",
+                input_shape=data_shape[1:],
+            )
+        )
+        model.add(MaxPooling1D(pool_size=6))
+
+        model.add(Conv1D(filters=32, kernel_size=5, activation="relu"))
+        model.add(MaxPooling1D(pool_size=6))
+
+        # Dropout and flatten
+        model.add(Flatten())
+        model.add(Dense(64, activation="relu"))
+        model.add(Dropout(0.5))
 
         model.add(Dense(num_classes, activation="softmax"))
+        model.summary()
+
         model.compile(
             loss="sparse_categorical_crossentropy",
-            optimizer="adam",
+            optimizer="adadelta",
             metrics=["accuracy"],
         )
         return model
@@ -63,21 +76,26 @@ class DLTxClassifier(Classifier):
         x_test_input = np.asarray(x_test_tfidf.toarray())
         y_test_input = np.asarray(y_test)
 
-        model = self._build_model(x_train_tfidf.shape[1], 3)
-        model.fit(
-            x_train_input,
+        x_train_tfidf_reshaped = np.expand_dims(x_train_input, axis=2)
+        x_test_tfidf_reshaped = np.expand_dims(x_test_input, axis=2)
+
+        self.model = self.__build_model(x_train_tfidf_reshaped.shape, 3)
+        self.model.fit(
+            x_train_tfidf_reshaped,
             y_train_input,
             validation_data=(x_test_input, y_test_input),
-            epochs=10,
-            batch_size=128,
+            epochs=12,
+            batch_size=64,
             verbose=2,
         )
 
-        predict_x = model.predict(x_test_input)
-        predicted = np.argmax(predict_x, axis=1)
+        predicted = self.model.predict(x_test_tfidf_reshaped)
+        predicted_classes = np.argmax(predicted, axis=1)
+        logger.info(metrics.classification_report(y_test, predicted_classes))
+        logger.info(metrics.accuracy_score(y_test, predicted_classes))
 
-        logger.info(metrics.classification_report(y_test, predicted))
-        logger.info(metrics.accuracy_score(y_test, predicted))
+        if save_model:
+            self._save_model()
 
     def predict_resource(self, resource, show_top_features=False):
         logger.info("begin classifier predict_resource")
@@ -97,7 +115,8 @@ class DLTxClassifier(Classifier):
                 top_features = top_features_pro_samples[0]
 
             x_test_tfidf_reshaped = np.expand_dims(x_test_transformed.toarray(), axis=2)
-            y_pred = self.model.predict(x_test_tfidf_reshaped)
+            predict_x = self.model.predict(x_test_tfidf_reshaped)
+            y_pred = np.argmax(predict_x, axis=1)
 
         logger.info("end classifier predict_resource")
         return y_pred, top_features

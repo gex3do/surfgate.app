@@ -2,8 +2,8 @@ import datetime
 
 from sqlalchemy import Column, DateTime, Integer, String
 
-from src.core.AppEnum import UserStatus, UserType
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.app_enum import UserStatus, UserType
+from src.core.manager.sql_mgr import SqlMgr
 
 
 class User(SqlMgr.base):

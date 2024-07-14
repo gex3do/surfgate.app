@@ -4,7 +4,7 @@ from typing import Callable
 from bs4 import BeautifulSoup
 from fastapi import HTTPException
 
-from src.core.AppError import AppError
+from src.core.app_error import AppError
 from src.utils.logger import logger
 
 

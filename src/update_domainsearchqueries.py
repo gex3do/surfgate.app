@@ -3,8 +3,8 @@
 import argparse
 import os
 
-from src.core.manager.DomainQueryMgr import DomainQueryMgr
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.domain_query_mgr import DomainQueryMgr
+from src.core.manager.sql_mgr import SqlMgr
 from src.utils.settings import read_settings
 
 

@@ -7,16 +7,16 @@ from fastapi import HTTPException
 from sqlalchemy.orm import Session
 
 from src.core import debug_log_entry_exit
-from src.core.AppEnum import ResourceStatus, ResourceType
-from src.core.entity.Feature import Feature
-from src.core.entity.Resource import Resource
-from src.core.featureextractor.DefaultResource import DefaultResource
-from src.core.featureextractor.YoutubeResource import YoutubeResource
+from src.core.app_enum import ResourceStatus, ResourceType
+from src.core.entity.feature import Feature
+from src.core.entity.resource import Resource
+from src.core.featureextractor.default_resource import DefaultResource
+from src.core.featureextractor.youtube_resource import YoutubeResource
 from src.core.helper.url import get_domain_name_from_url
-from src.core.manager import TokenizationMgr
+from src.core.manager.tokenization_mgr import TokenizationMgr
 from src.core.webscrapper import parse
-from src.core.webscrapper.RequestsScrapper import RequestsScrapper
-from src.core.webscrapper.WebDriveScrapper import WebDriveScrapper
+from src.core.webscrapper.requests_scrapper import RequestsScrapper
+from src.core.webscrapper.webdrive_scrapper import WebDriveScrapper
 from src.utils.logger import logger
 
 """

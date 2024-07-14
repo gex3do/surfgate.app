@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
 
 from src.app.dependencies import process_api_request
-from src.core.api.UserApi import UserApi
+from src.core.api.user_api import UserApi
 from src.core.model.user_key import (
     UserCreateIn,
     UserCreateOut,

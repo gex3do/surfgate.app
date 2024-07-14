@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-from src.core.featureextractor.DefaultResource import DefaultResource
+from src.core.featureextractor.default_resource import DefaultResource
 
 
 class YoutubeResource(DefaultResource):

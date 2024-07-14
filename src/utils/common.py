@@ -1,7 +1,7 @@
-from src.core.manager.DomainQueryMgr import DomainQueryMgr
-from src.core.manager.FeatureExtractMgr import FeatureExtractMgr
-from src.core.manager.ResourceMgr import ResourceMgr
-from src.core.manager.TokenizationMgr import TokenizationMgr
+from src.core.manager.domain_query_mgr import DomainQueryMgr
+from src.core.manager.feature_extract_mgr import FeatureExtractMgr
+from src.core.manager.resource_mgr import ResourceMgr
+from src.core.manager.tokenization_mgr import TokenizationMgr
 
 
 def instantiate(settings: dict) -> dict:

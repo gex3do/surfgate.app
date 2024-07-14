@@ -4,7 +4,7 @@ from typing import Type
 
 from sqlalchemy.orm import Session
 
-from src.core.entity.User import User
+from src.core.entity.user import User
 from src.utils.logger import logger
 
 

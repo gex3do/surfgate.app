@@ -1,4 +1,4 @@
-from src.core.AppEnum import PredictionRate
+from src.core.app_enum import PredictionRate
 
 prediction_to_violation_rate = {
     0: PredictionRate.LOW,

@@ -9,12 +9,12 @@ from sqlalchemy.orm import Query
 from sqlalchemy.orm.session import Session
 
 from src.core import debug_log_entry_exit
-from src.core.AppEnum import ResourceStatus, ResourceType
-from src.core.AppError import AppError
-from src.core.entity.Resource import Resource
+from src.core.app_enum import ResourceStatus, ResourceType
+from src.core.app_error import AppError
+from src.core.entity.resource import Resource
 from src.core.helper import url
-from src.core.manager.DomainQueryMgr import DomainQueryMgr
-from src.core.manager.FeatureExtractMgr import FeatureExtractMgr
+from src.core.manager.domain_query_mgr import DomainQueryMgr
+from src.core.manager.feature_extract_mgr import FeatureExtractMgr
 from src.core.model.resource import Lang
 from src.utils.logger import logger
 

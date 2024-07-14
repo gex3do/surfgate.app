@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
 
 from src.app.dependencies import process_api_request
-from src.core.api.KeyApi import KeyApi
+from src.core.api.key_api import KeyApi
 from src.core.model.user_key import (
     KeyCreateIn,
     KeyCreateOut,

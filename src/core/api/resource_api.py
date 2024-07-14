@@ -2,12 +2,12 @@ from http import HTTPStatus
 
 from sqlalchemy.orm.session import Session
 
-from src.core.api.Responser import Responser
-from src.core.AppError import AppError
-from src.core.entity.Resource import Resource
+from src.core.api.responser import Responser
+from src.core.app_error import AppError
+from src.core.entity.resource import Resource
 from src.core.helper import normalizer
-from src.core.manager.KeyMgr import KeyMgr
-from src.core.manager.ResourceMgr import ResourceMgr
+from src.core.manager.key_mgr import KeyMgr
+from src.core.manager.resource_mgr import ResourceMgr
 from src.core.model.resource import (
     ResourcePredictGetIn,
     ResourcePredictGetOrRateOut,

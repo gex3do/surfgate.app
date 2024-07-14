@@ -3,8 +3,8 @@ import datetime
 from sqlalchemy import BigInteger, Column, DateTime, ForeignKey, Index, Integer, String
 from sqlalchemy.orm import backref, relationship
 
-from src.core.entity.User import User
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.entity.user import User
+from src.core.manager.sql_mgr import SqlMgr
 
 
 class Key(SqlMgr.base):

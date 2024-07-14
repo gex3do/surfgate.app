@@ -6,11 +6,11 @@ import datedelta
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
-from src.core.AppEnum import UserStatus, UserType
-from src.core.AppError import AppError
-from src.core.entity.Key import Key
-from src.core.entity.User import User
-from src.core.manager.UserMgr import UserMgr
+from src.core.app_enum import UserStatus, UserType
+from src.core.app_error import AppError
+from src.core.entity.key import Key
+from src.core.entity.user import User
+from src.core.manager.user_mgr import UserMgr
 from src.utils.logger import logger
 
 
@@ -137,7 +137,8 @@ class KeyMgr:
 
     def validate_key(self, sess: Session, user_key: str, permission: str):
         """
-        Validates user key and provides results above it
+        Validate user key and provides results above it.
+
         Args:
             sess: SQL Alchemy Session
             user_key: key value

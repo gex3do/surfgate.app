@@ -1,4 +1,4 @@
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.sql_mgr import SqlMgr
 from src.utils.classifier import get_classifier
 from src.utils.common import instantiate
 

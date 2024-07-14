@@ -5,16 +5,16 @@ import uvicorn
 from fastapi import Depends, FastAPI, Header, Request
 
 from src.app.routers import general, keys, resources, tasks, users
-from src.core.api.KeyApi import KeyApi
+from src.core.api.key_api import KeyApi
 from src.core.api.meta_tags import tags_metadata
 from src.core.api.permissions import min_permissions
-from src.core.api.ResourceApi import ResourceApi
-from src.core.api.TaskApi import TaskApi
-from src.core.api.UserApi import UserApi
-from src.core.manager.KeyMgr import KeyMgr
-from src.core.manager.SqlMgr import SqlMgr
-from src.core.manager.TaskMgr import TaskMgr
-from src.core.manager.UserMgr import UserMgr
+from src.core.api.resource_api import ResourceApi
+from src.core.api.task_api import TaskApi
+from src.core.api.user_api import UserApi
+from src.core.manager.key_mgr import KeyMgr
+from src.core.manager.sql_mgr import SqlMgr
+from src.core.manager.task_mgr import TaskMgr
+from src.core.manager.user_mgr import UserMgr
 from src.utils.classifier import get_classifier
 from src.utils.common import instantiate
 from src.utils.settings import read_version

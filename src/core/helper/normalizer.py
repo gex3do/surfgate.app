@@ -1,4 +1,4 @@
-from src.core.AppEnum import ResourceType
+from src.core.app_enum import ResourceType
 from src.core.model.resource import ResourcePredictGetIn, ResourcePredictRateIn
 from src.core.model.task import TaskCreateIn
 

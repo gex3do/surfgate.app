@@ -3,7 +3,7 @@ from urllib.parse import parse_qs, quote_plus, urlparse
 
 from sqlalchemy.orm import Session
 
-from src.core.entity.DomainQuery import DomainQuery
+from src.core.entity.domain_query import DomainQuery
 
 
 class DomainQueryMgr:

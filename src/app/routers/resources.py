@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response
 
 from src.app.dependencies import process_api_request
-from src.core.api.ResourceApi import ResourceApi
+from src.core.api.resource_api import ResourceApi
 from src.core.model.resource import (
     ResourcePredictGetIn,
     ResourcePredictGetOrRateOut,

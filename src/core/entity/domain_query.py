@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Index, Integer, String
 
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.sql_mgr import SqlMgr
 
 
 class DomainQuery(SqlMgr.base):

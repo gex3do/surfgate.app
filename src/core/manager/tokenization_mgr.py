@@ -2,7 +2,7 @@ import re
 
 import nltk
 
-from src.core.featureextractor.DefaultResource import DefaultResource
+from src.core.featureextractor.default_resource import DefaultResource
 from src.utils.logger import logger
 
 nltk.download("stopwords")

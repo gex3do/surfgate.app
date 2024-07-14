@@ -8,8 +8,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 from sqlalchemy.orm import Session
 
-from src.core.classifier.Classifier import Classifier
-from src.core.manager.ResourceMgr import ResourceMgr
+from src.core.classifier.classifier import Classifier
+from src.core.manager.resource_mgr import ResourceMgr
 from src.utils.logger import logger
 
 

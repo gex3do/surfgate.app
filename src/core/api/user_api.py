@@ -1,10 +1,12 @@
 from sqlalchemy import exc
 from sqlalchemy.orm.session import Session
 
-from src.core.api.Responser import Responser
-from src.core.AppEnum import UserType
-from src.core.AppError import AppError
-from src.core.manager import KeyMgr, ResourceMgr, UserMgr
+from src.core.api.responser import Responser
+from src.core.app_enum import UserType
+from src.core.app_error import AppError
+from src.core.manager.key_mgr import KeyMgr
+from src.core.manager.resource_mgr import ResourceMgr
+from src.core.manager.user_mgr import UserMgr
 from src.core.model.user_key import UserCreateIn, UserKeyCreateIn
 
 

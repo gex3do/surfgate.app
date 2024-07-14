@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 from sqlalchemy.orm import Session
 
-from src.core.AppError import AppError
-from src.core.manager.ResourceMgr import ResourceMgr
+from src.core.app_error import AppError
+from src.core.manager.resource_mgr import ResourceMgr
 from src.utils.logger import logger
 
 

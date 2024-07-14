@@ -10,18 +10,18 @@ from fastapi import HTTPException
 from sqlalchemy import or_
 from sqlalchemy.orm import Query, Session
 
-from src.core.api.Responser import Responser
-from src.core.AppEnum import (
+from src.core.api.responser import Responser
+from src.core.app_enum import (
     PredictionRate,
     ResourceType,
     TaskNotificationResponse,
     TaskStatus,
 )
-from src.core.entity.PageItem import PageItem
-from src.core.entity.Resource import Resource
-from src.core.entity.Task import Task
+from src.core.entity.page_item import PageItem
+from src.core.entity.resource import Resource
+from src.core.entity.task import Task
 from src.core.helper.rate import prediction_to_violation
-from src.core.manager.FeatureExtractMgr import fetchers
+from src.core.manager.feature_extract_mgr import fetchers
 from src.core.webscrapper import get_content_by_val_and_collect_links
 from src.utils.logger import logger
 

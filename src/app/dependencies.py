@@ -2,7 +2,7 @@ from typing import Callable
 
 from fastapi import HTTPException
 
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.sql_mgr import SqlMgr
 from src.core.model.resource import ResourcePredictGetIn, ResourcePredictRateIn
 from src.core.model.task import TaskCreateIn, TaskGetIn
 from src.core.model.user_key import (

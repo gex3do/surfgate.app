@@ -2,7 +2,7 @@
 
 import argparse
 
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.sql_mgr import SqlMgr
 from src.utils.init import init_resources
 from src.utils.logger import logger
 from src.utils.settings import read_settings

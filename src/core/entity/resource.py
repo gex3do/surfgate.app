@@ -2,7 +2,7 @@ import datetime
 
 from sqlalchemy import Boolean, Column, DateTime, Index, Integer, String, Text
 
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.manager.sql_mgr import SqlMgr
 
 
 class Resource(SqlMgr.base):

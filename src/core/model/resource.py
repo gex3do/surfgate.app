@@ -4,7 +4,7 @@ from typing import Literal, Optional
 from pydantic import BaseModel, Field, field_validator
 from pydantic_core.core_schema import ValidationInfo
 
-from src.core.AppEnum import ResourceType
+from src.core.app_enum import ResourceType
 
 
 class Lang(StrEnum):

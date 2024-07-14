@@ -10,8 +10,8 @@ from sqlalchemy import (
     String,
 )
 
-from src.core.AppEnum import TaskStatus
-from src.core.manager.SqlMgr import SqlMgr
+from src.core.app_enum import TaskStatus
+from src.core.manager.sql_mgr import SqlMgr
 
 
 class Task(SqlMgr.base):
