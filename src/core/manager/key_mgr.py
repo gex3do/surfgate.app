@@ -88,9 +88,9 @@ class KeyMgr:
         return key
 
     @staticmethod
-    def delete_key_by_orderid(sess, user_id, order_id):
+    def delete_key_by_orderid(sess, user_id: int, order_id: str) -> bool:
         key = (
-            sess.query(Key)
+            sess.query(Key).join(User)
             .filter(
                 Key.order_id == order_id,
                 Key.user_id == user_id,
@@ -98,9 +98,12 @@ class KeyMgr:
             )
             .first()
         )
+        if key is None:
+            return False
 
         sess.delete(key)
         sess.flush()
+        return True
 
     @staticmethod
     def update_key_period(sess: Session, key: Key, months: int = 1) -> Key:

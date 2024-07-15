@@ -76,7 +76,8 @@ class KeyApi:
             if not user:
                 raise AppError.user_not_found()
 
-            self.key_mgr.delete_key_by_orderid(sess, data.user_uuid, data.order_id)
+            if not self.key_mgr.delete_key_by_orderid(sess, int(user.id), data.order_id):
+                raise AppError.key_not_found()
 
         except exc.SQLAlchemyError as e:
             logger.error("key cannot be deleted by order-id: %s. Error occurred: %s", data.order_id, str(e))
@@ -84,34 +85,28 @@ class KeyApi:
 
         return Responser.create_user_key_delete_status()
 
-    def update_key_period(self, sess: Session, data: dict):
+    def update_key_period(self, sess: Session, data: KeyUpdatePeriodIn):
         try:
-            val = data["value"]
-            key = self.key_mgr.get_key_by_value(sess, val)
+            key = self.key_mgr.get_key_by_value(sess, str(data.key))
 
             if not key:
                 raise AppError.key_not_found()
 
-            months = data["months"]
-
-            self.key_mgr.update_key_period(sess, key.value, months=months)
+            self.key_mgr.update_key_period(sess, key, months=data.months)
 
         except exc.SQLAlchemyError:
             raise AppError.key_update()
 
         return Responser.create_user_key_creation_status(key)
 
-    def update_key_frequency(self, sess: Session, data: dict):
+    def update_key_frequency(self, sess: Session, data: KeyUpdateFrequencyIn):
         try:
-            val = data["value"]
-            key = self.key_mgr.get_key_by_value(sess, val)
+            key = self.key_mgr.get_key_by_value(sess, str(data.key))
 
             if not key:
                 raise AppError.key_not_found()
 
-            frequency = data["frequency"]
-
-            self.key_mgr.update_key_frequency(sess, key, frequency)
+            self.key_mgr.update_key_frequency(sess, key, data.frequency)
 
         except exc.SQLAlchemyError:
             raise AppError.key_update()
