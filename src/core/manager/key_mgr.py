@@ -1,6 +1,5 @@
 import uuid
 from datetime import date, datetime
-from typing import Type
 
 import datedelta
 from sqlalchemy.exc import SQLAlchemyError
@@ -33,11 +32,11 @@ class KeyMgr:
         self.user_mgr = user_mgr
 
     @staticmethod
-    def get_key_by_value(sess: Session, value: str) -> Type[Key] | None:
+    def get_key_by_value(sess: Session, value: str) -> Key | None:
         return sess.query(Key).filter(Key.value == value).first()
 
     @staticmethod
-    def get_key_activated_user_by_val(sess: Session, user_key: str) -> Type[Key] | None:
+    def get_key_activated_user_by_val(sess: Session, user_key: str) -> Key | None:
         key = (
             sess.query(Key)
             .join(User)
@@ -104,24 +103,23 @@ class KeyMgr:
         sess.flush()
 
     @staticmethod
-    def update_key_period(sess: Session, key: str, months: int = 1) -> str:
-        valid_to = key.valid_to + datedelta.datedelta(months=months)
-        key.valid_to = valid_to
+    def update_key_period(sess: Session, key: Key, months: int = 1) -> Key:
+        key.valid_to = key.valid_to + datedelta.datedelta(months=months)
         sess.add(key)
         sess.flush()
         return key
 
     @staticmethod
     def update_key_frequency(
-        sess: Session, key: Type[Key], frequency: int = 1
-    ) -> Type[Key]:
+        sess: Session, key: Key, frequency: int = 1
+    ) -> Key:
         key.requests_left = key.requests_left + frequency
         sess.add(key)
         sess.flush()
         return key
 
     @staticmethod
-    def reduce_key_requests(sess: Session, key: Type[Key]) -> Type[Key]:
+    def reduce_key_requests(sess: Session, key: Key) -> Key:
         if key.requests_left > 0:
             key.requests_left = key.requests_left - 1
         sess.add(key)
@@ -129,7 +127,7 @@ class KeyMgr:
         return key
 
     @staticmethod
-    def increase_key_requests(sess: Session, key: Type[Key]) -> Type[Key]:
+    def increase_key_requests(sess: Session, key: Key) -> Key:
         key.requests_left = key.requests_left + 1
         sess.add(key)
         sess.flush()
@@ -152,7 +150,7 @@ class KeyMgr:
             logger.error("Key has not been found: %s", key)
             raise AppError.key_not_found()
 
-        if key.user.type not in self.min_permission[permission]:
+        if key.user.type not in self.min_permission[UserType(permission)]:
             logger.error(
                 "Key was found, but has no enough "
                 "permissions to do this operation: %s",

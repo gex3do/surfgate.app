@@ -37,7 +37,7 @@ class TaskMgr:
         ]
 
     @staticmethod
-    def get_task_by_uuid(sess: Session, uuid: UUID) -> Type[Task] | None:
+    def get_task_by_uuid(sess: Session, uuid: UUID) -> Task | None:
         return sess.query(Task).filter(Task.uuid == str(uuid)).first()
 
     @staticmethod
@@ -81,15 +81,15 @@ class TaskMgr:
         ]
 
     @staticmethod
-    def is_declined(task: Type[Task]) -> bool:
+    def is_declined(task: Task) -> bool:
         return task.status in [TaskStatus.DECLINED]
 
     @staticmethod
-    def is_checked(task: Type[Task]) -> bool:
+    def is_checked(task: Task) -> bool:
         return task.status in [TaskStatus.CHECKED]
 
     @staticmethod
-    def is_deleted(task: Type[Task]) -> bool:
+    def is_deleted(task: Task) -> bool:
         return task.status in [TaskStatus.DELETED]
 
     @staticmethod

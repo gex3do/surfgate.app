@@ -11,7 +11,10 @@ from src.core.model.user_key import (
     KeyDeleteByOrderIdIn,
     KeyGetIn,
     KeyGetOut,
+    KeyUpdateFrequencyIn,
+    KeyUpdatePeriodIn,
 )
+from src.utils.logger import logger
 
 
 class KeyApi:
@@ -40,8 +43,8 @@ class KeyApi:
         try:
             months = data.months
 
-            user_found = self.user_mgr.get_user_by_uuid(sess, data.user_uuid)
-            if not user_found:
+            user = self.user_mgr.get_user_by_uuid(sess, data.user_uuid)
+            if not user:
                 raise AppError.user_not_found()
 
             requests_left = self.requests_left_default
@@ -52,7 +55,7 @@ class KeyApi:
 
             key = self.key_mgr.create_key(
                 sess,
-                user_found.id,
+                user.id,
                 months=months,
                 requests_left=requests_left,
                 order_id=data.order_id,
@@ -68,14 +71,15 @@ class KeyApi:
 
     def delete_key_by_orderid(self, sess: Session, data: KeyDeleteByOrderIdIn):
         try:
-            user_found = self.user_mgr.get_user_by_uuid(sess, data.user_uuid)
+            user = self.user_mgr.get_user_by_uuid(sess, data.user_uuid)
 
-            if not user_found:
+            if not user:
                 raise AppError.user_not_found()
 
             self.key_mgr.delete_key_by_orderid(sess, data.user_uuid, data.order_id)
 
-        except exc.SQLAlchemyError:
+        except exc.SQLAlchemyError as e:
+            logger.error("key cannot be deleted by order-id: %s. Error occurred: %s", data.order_id, str(e))
             raise AppError.key_delete()
 
         return Responser.create_user_key_delete_status()

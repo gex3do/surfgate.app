@@ -1,6 +1,6 @@
 import json
 from http import HTTPStatus
-from typing import Any, Type
+from typing import Any
 
 from src.core.entity.key import Key
 from src.core.entity.user import User
@@ -32,7 +32,7 @@ class Responser:
 
     @staticmethod
     def create_user_key_creation_status(
-        key: Type[Key],
+        key: Key,
     ) -> (UserKeyCreateOut, HTTPStatus):
         return (
             UserKeyCreateOut(

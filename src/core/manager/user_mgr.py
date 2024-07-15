@@ -1,6 +1,5 @@
 import hashlib
 import uuid
-from typing import Type
 
 from sqlalchemy.orm import Session
 
@@ -35,7 +34,7 @@ class UserMgr:
         return user
 
     @staticmethod
-    def get_user_by_uuid(sess: Session, user_uuid: uuid.UUID) -> Type[User] | None:
+    def get_user_by_uuid(sess: Session, user_uuid: uuid.UUID) -> User | None:
         return sess.query(User).filter(User.uuid == str(user_uuid)).first()
 
     def _hash_password(self, password: str) -> str:

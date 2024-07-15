@@ -1,6 +1,5 @@
 import uuid
 from http import HTTPStatus
-from typing import Type
 
 from sqlalchemy import exc
 from sqlalchemy.orm.session import Session
@@ -77,7 +76,7 @@ class TaskApi:
         return Responser.create_task_result(page_root_item, stats)
 
     @staticmethod
-    def _update_task_usage_stats(sess: Session, task: Type[Task]):
+    def _update_task_usage_stats(sess: Session, task: Task):
         task.used = task.used + 1
         sess.add(task)
         sess.flush()

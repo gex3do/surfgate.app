@@ -52,13 +52,11 @@ class ResourceMgr:
         return sess.query(Resource).filter_by(status=status)
 
     @staticmethod
-    def get_resource_by_id(sess: Session, resource_id) -> Type[Resource] | None:
+    def get_resource_by_id(sess: Session, resource_id) -> Resource | None:
         return sess.query(Resource).filter_by(id=resource_id).first()
 
     @staticmethod
-    def get_checked_resource_by_value(
-        sess: Session, value: str
-    ) -> Type[Resource] | None:
+    def get_checked_resource_by_value(sess: Session, value: str) -> Resource | None:
         return (
             sess.query(Resource)
             .filter_by(value=value, status=ResourceStatus.CHECKED)
@@ -66,13 +64,13 @@ class ResourceMgr:
         )
 
     @staticmethod
-    def get_resource_by_value(sess: Session, value: str) -> Type[Resource] | None:
+    def get_resource_by_value(sess: Session, value: str) -> Resource | None:
         return sess.query(Resource).filter_by(value=value).first()
 
     @staticmethod
     def get_checked_propogated_resource_by_value(
         sess: Session, domain_name: str
-    ) -> Type[Resource] | None:
+    ) -> Resource | None:
         return (
             sess.query(Resource)
             .filter(
@@ -141,7 +139,7 @@ class ResourceMgr:
     @debug_log_entry_exit(__name__)
     def _get_requested_checked_resource(
         self, sess: Session, resource: Resource
-    ) -> Type[Resource] | None:
+    ) -> Resource | None:
         domain_name = None
 
         # Rebuild  query-search to make it similar and remove unnecessary parts from search
@@ -183,7 +181,7 @@ class ResourceMgr:
         return requested_resource
 
     @debug_log_entry_exit(__name__)
-    def get(self, sess: Session, resource: Resource) -> Type[Resource] | None:
+    def get(self, sess: Session, resource: Resource) -> Resource | None:
         return self._get_requested_checked_resource(sess, resource)
 
     @debug_log_entry_exit(__name__)
