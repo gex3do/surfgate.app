@@ -28,7 +28,7 @@ class KeyCreateIn(BaseModel):
 
 class KeyDeleteByOrderIdIn(BaseModel):
     user_uuid: UUID
-    order_id: str | None = Field(min_length=1, max_length=15)
+    order_id: str = Field(min_length=1, max_length=15)
 
 
 class KeyGetIn(BaseModel):
@@ -37,12 +37,12 @@ class KeyGetIn(BaseModel):
 
 class KeyUpdateFrequencyIn(BaseModel):
     key: UUID
-    frequency: int = Field(min_length=0, max_length=99999)
+    frequency: int = Field(ge=1, le=99999)
 
 
 class KeyUpdatePeriodIn(BaseModel):
     key: UUID
-    months: int = Field(le=60)
+    months: int = Field(ge=1, le=60)
 
 
 class UserKeyDeleteOut(BaseModel):
