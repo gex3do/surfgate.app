@@ -71,6 +71,14 @@ def start_server(settings: dict) -> None:
         openapi_tags=tags_metadata,
     )
 
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
     app.include_router(general.get_router(settings))
     app.include_router(resources.get_router(resource_api))
     app.include_router(users.get_router(user_api))
