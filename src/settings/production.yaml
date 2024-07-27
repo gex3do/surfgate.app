@@ -9,10 +9,10 @@ main:
     restore_filename: surfgate.app.bak
     configuration:
       username: postgres
-      password: zKi8eWnYCKgHsaoU
+      password: SECRET
       dbname: surfgateapp
       host: "{env_db_ip}"
-      connection_string: postgresql://postgres:zKi8eWnYCKgHsaoU@{env_db_ip}:5432/surfgateapp
+      connection_string: postgresql://postgres:SECRET@{env_db_ip}:5432/surfgateapp
       pool_size: 30
       max_overflow: 150
       pool_timeout: 30
@@ -24,6 +24,9 @@ main:
     latest_resource_rate: false
     task_notification_tries: 50
   password_salt: dA@3(*_@xaX_zxc!@
+  limits:
+    reset_after_seconds: 60
+    connections_per_user: 10
 model:
   mode: tx
   train:

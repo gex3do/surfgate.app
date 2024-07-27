@@ -138,3 +138,8 @@ class AppError:
             http.HTTPStatus.BAD_REQUEST,
             f"The task is declined. {AppError.SUPPORT_TEXT}",
         )
+
+    @staticmethod
+    def too_many_requests() -> HTTPException:
+        return HTTPException(http.HTTPStatus.TOO_MANY_REQUESTS, "You have sent too many requests, please try again "
+                                                                "later")

@@ -24,6 +24,9 @@ main:
     latest_resource_rate: false
     task_notification_tries: 50
   password_salt: ''
+  limits:
+    reset_after_seconds: 60
+    connections_per_user: 10
 model:
   mode: tx
   train:
